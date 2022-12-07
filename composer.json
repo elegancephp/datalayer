@@ -17,8 +17,8 @@
         ]
     },
     "require": {
-        "elegance/core": "dev-main",
-        "elegance/mxcmd": "dev-main",
-        "elegance/cif-code": "dev-main"
+        "elegance/core": "^1.0",
+        "elegance/mxcmd": "^1.0",
+        "elegance/cif-code": "^1.0"
     }
 }
