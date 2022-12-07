@@ -18,7 +18,7 @@ abstract class MxDbdriver extends MxCmd
     {
         self::$datalayer = Datalayer::name($datalayer);
         self::$map = Datalayer::get($datalayer)->map();
-        self::$path = "./class/Model/Db" . self::$datalayer;
+        self::$path = './' . env('PATH_CLASS') . '/Model/Db' . self::$datalayer;
         MxCmd::show("Criando drivers para [[#]]", self::$datalayer);
 
         MxCmd::show("--------------------");
