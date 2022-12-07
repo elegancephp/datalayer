@@ -1,0 +1,7 @@
+
+    /** [#comment] */
+    static function [#tableName](): \[#namespace]\Record\Record[#tableClassName]
+    {
+        return self::$[#tableName]->getAuto(...func_get_args());
+    }
+    

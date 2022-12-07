@@ -1,0 +1,18 @@
+[#PHP]
+
+namespace [#namespace]\Driver;
+
+use Elegance\Datalayer\Driver\Field as FIELD;
+
+/**[#autocomplete]
+ */
+abstract class DriverRecord[#tableClassName] extends \Elegance\Datalayer\Driver\Record
+{
+    protected $DATALAYER = '[#datalayer]';
+    protected $TABLE = '[#tableName]';
+    protected $NAME_FIELDS = [[#nameFields]];
+
+    protected function __driver__(): void
+    {
+[#createFields]    }
+[#smartControl]}

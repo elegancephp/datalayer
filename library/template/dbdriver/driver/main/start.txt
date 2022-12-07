@@ -1,0 +1,1 @@
+[#className]::$[#tableName] = new \[#namespace]\Table\Table[#tableClassName]();

@@ -1,0 +1,4 @@
+    
+    /** @var \[#namespace]\Table\Table[#tableClassName] [#comment] */
+    static $[#tableName];
+    

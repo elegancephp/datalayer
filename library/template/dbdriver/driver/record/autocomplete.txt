@@ -1,0 +1,3 @@
+ 
+ * @property FIELD\Field[#type] $[#name] [#comment]
+ * @method $this [#name]() [#comment]

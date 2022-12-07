@@ -1,0 +1,13 @@
+[#PHP]
+
+/** Migration [#name] */
+new class($datalayer, $mode) extends Elegance\Datalayer\Migration
+{
+    function up()
+    {
+    }
+
+    function down()
+    {
+    }
+};

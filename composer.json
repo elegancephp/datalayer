@@ -1,0 +1,24 @@
+{
+    "name": "elegance/datalayer",
+    "description": "Camada de conexão com banco de dados",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Ricardo",
+            "email": "contatoadmx@gamil.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "class/"
+        },
+        "files": [
+            "helper/script/env.php"
+        ]
+    },
+    "require": {
+        "elegance/core": "dev-main",
+        "elegance/mxcmd": "dev-main",
+        "elegance/cif-code": "dev-main"
+    }
+}

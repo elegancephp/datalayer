@@ -1,0 +1,25 @@
+    
+    /** Retorna o momento em que o registro foi removido (SMARTCONTROL) */
+    function _getDelete()
+    {
+        return $this->_smartControl('_delete')->get();
+    }
+
+    /** Retorna o momento em que o registro foi atualizado (SMARTCONTROL) */
+    function _getUpdate()
+    {
+        return $this->_smartControl('_update')->get();
+    }
+
+    /** Retorna o momento em que o registro foi criado (SMARTCONTROL) */
+    function _getCreate()
+    {
+        return $this->_smartControl('_create')->get();
+    }
+
+    /** Marca ou desmarca o registro como removido (SMARTCONTROL) */
+    function _drop($drop = true)
+    {
+        $this->_smartControl('_delete')->set($drop ? time() : 0);
+        return $this;
+    }

@@ -1,0 +1,31 @@
+    /** Conta os registros marcados como removido (DROP) correspondentes a uma pesquisa */
+    function countDroped()
+    {
+        $query = $this->getQuery(...func_get_args())->where('_delete > 1');
+        return count($query->fields(null, 'id')->run());
+    }
+
+    /**
+     * Busca uma lista de registros marcados como removido (DROP)
+     * @return \[#namespace]\Record\Record[#tableClassName][]
+     */
+    function getDropeds()
+    {
+        $result = $this->getQuery(...func_get_args())->where('_delete > 1')->run();
+        return $this->convert($result);
+    }
+
+    /**
+     * Busca um registro marcado como removido  (DROP)
+     * @return \[#namespace]\Record\Record[#tableClassName]
+     */
+    function getDroped()
+    {
+        if (func_num_args() && !func_get_args()[0]) {
+            return $this->getNull();
+        }
+
+        $result = $this->getQuery(...func_get_args())->where('_delete > 1')->limit(1)->run();
+
+        return empty($result) ? $this->getNull() : $this->object(array_shift($result));
+    }

@@ -1,0 +1,5 @@
+
+    /** Utilize este metodo para adicionar os campos ao metaFields*/
+    protected function __meta__(): void
+    {
+    }

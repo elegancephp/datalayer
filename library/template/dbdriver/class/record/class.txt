@@ -1,0 +1,13 @@
+[#PHP]
+
+namespace [#namespace]\Record;
+
+use Elegance\Datalayer\Driver\Field as FIELD;
+
+class Record[#tableClassName] extends \[#namespace]\Driver\DriverRecord[#tableClassName]
+{ [#smartMeta]
+    /** Utilize este metodo para personalizar os campos */
+    protected function __customize__(): void
+    {
+    }
+}

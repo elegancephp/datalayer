@@ -1,0 +1,9 @@
+[#PHP]
+
+namespace [#namespace]\Driver;
+
+abstract class [#className]
+{ [#varTable]    [#method]
+}
+
+[#start]
