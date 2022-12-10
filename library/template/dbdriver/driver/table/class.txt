@@ -1,5 +1,10 @@
 [#PHP]
 
+/***************************************************\
+|* Arquivo de driver gerado por Elegance/Datalayer *|
+|* ALTERAÇÕES REALIZADAS AQUI SERÃO SER PERDIDAS   *|
+\***************************************************/
+
 namespace [#namespace]\Driver;
 
 /**
@@ -21,3 +26,8 @@ abstract class DriverTable[#tableClassName] extends \Elegance\Datalayer\Driver\T
     protected $recordClass = '[#namespace]\Record\Record[#tableClassName]';
 
 [#smartControl]}
+
+/***************************************************\
+|* Arquivo de driver gerado por Elegance/Datalayer *|
+|* ALTERAÇÕES REALIZADAS AQUI SERÃO SER PERDIDAS   *|
+\***************************************************/

@@ -1,5 +1,10 @@
 [#PHP]
 
+/***************************************************\
+|* Arquivo de driver gerado por Elegance/Datalayer *|
+|* ALTERAÇÕES REALIZADAS AQUI SERÃO SER PERDIDAS   *|
+\***************************************************/
+
 namespace [#namespace]\Driver;
 
 abstract class [#className]
@@ -7,3 +12,8 @@ abstract class [#className]
 }
 
 [#start]
+
+/***************************************************\
+|* Arquivo de driver gerado por Elegance/Datalayer *|
+|* ALTERAÇÕES REALIZADAS AQUI SERÃO SER PERDIDAS   *|
+\***************************************************/

@@ -1,5 +1,10 @@
 [#PHP]
 
+/***************************************************\
+|* Arquivo de driver gerado por Elegance/Datalayer *|
+|* ALTERAÇÕES REALIZADAS AQUI SERÃO SER PERDIDAS   *|
+\***************************************************/
+
 namespace [#namespace]\Driver;
 
 use Elegance\Datalayer\Driver\Field as FIELD;
@@ -16,3 +21,8 @@ abstract class DriverRecord[#tableClassName] extends \Elegance\Datalayer\Driver\
     {
 [#createFields]    }
 [#smartControl]}
+
+/***************************************************\
+|* Arquivo de driver gerado por Elegance/Datalayer *|
+|* ALTERAÇÕES REALIZADAS AQUI SERÃO SER PERDIDAS   *|
+\***************************************************/
