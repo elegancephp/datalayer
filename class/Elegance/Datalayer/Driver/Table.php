@@ -17,8 +17,6 @@ abstract class Table
 
     protected $recordClass;
 
-    protected $active;
-
     protected $cache = [];
     protected $cacheResult = [];
 
@@ -29,30 +27,12 @@ abstract class Table
         return count($query->fields(null, 'id')->run());
     }
 
-    /** Define um registro como registro ativo */
-    function active()
-    {
-        if (func_num_args()) {
-            if (is_class(func_get_arg(0), $this->recordClass)) {
-                $this->active = func_get_arg(0);
-            } else {
-                $this->active = $this->getAuto(...func_get_args());
-            }
-        }
-        $this->active = $this->active ?? $this->getNull();
-        return $this->active;
-    }
-
     /** Busca um registro baseando-se os parametros fornecidos */
     function getAuto()
     {
         $parameter = func_get_args()[0] ?? null;
 
-        if ($parameter === true) {
-            return $this->active();
-        }
-
-        if (!count(func_get_args()) || $parameter === 0) {
+        if ($parameter === true || !count(func_get_args()) || $parameter === 0) {
             return $this->getNew();
         }
 
