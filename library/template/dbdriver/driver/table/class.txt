@@ -19,6 +19,6 @@ abstract class DriverTable[#tableClassName] extends \Elegance\Datalayer\Driver\T
     protected $metaField = [#useMetaField];
     protected $smartControl = [#useSmartControl];
 
-    protected $recordClass = '\[#namespace]\Record\Record[#tableClassName]';
+    protected $recordClass = '[#namespace]\Record\Record[#tableClassName]';
 
 [#smartControl]}
