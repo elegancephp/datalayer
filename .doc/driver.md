@@ -88,6 +88,11 @@ Conta os resultados de uma pesquisa
 
     DbMain::$tabela->count()
 
+**active**
+Define um registro como registro ativo
+
+    DbMain::$tabela->active()
+
 **convert**
 Converte um array de resultados em um array de objetos
 

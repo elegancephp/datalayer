@@ -8,6 +8,7 @@
 namespace [#namespace]\Driver;
 
 /**
+ * @method \[#namespace]\Record\Record[#tableClassName] active Retorna o regitro marcado como ativo
  * @method \[#namespace]\Record\Record[#tableClassName] getAuto Busca um registro baseando-se os parametros fornecidos
  * @method \[#namespace]\Record\Record[#tableClassName] getNew Retorna um registro NOVO
  * @method \[#namespace]\Record\Record[#tableClassName] getNull Retorna um registro NULO
