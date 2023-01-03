@@ -10,15 +10,15 @@
     ],
     "autoload": {
         "psr-4": {
-            "": "class/"
+            "": "source/"
         },
         "files": [
             "helper/script/env.php"
         ]
     },
     "require": {
-        "elegance/core": "^1.0",
-        "elegance/mxcmd": "^1.0",
-        "elegance/cif-code": "^1.0"
+        "elegance/core": "^2.0",
+        "elegance/mxcmd": "^2.0",
+        "elegance/cif-code": "^2.0"
     }
 }
