@@ -65,7 +65,7 @@ class Insert extends BaseQuery
 
     protected function mountColumn(): string
     {
-        return '(' . implode(', ', $this->columns) . ')';
+        return '(`' . implode('`, `', $this->columns) . '`)';
     }
 
     protected function mountValues(): string
