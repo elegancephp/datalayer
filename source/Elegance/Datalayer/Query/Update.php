@@ -78,11 +78,11 @@ class Update extends BaseQuery
         $change     = [];
         foreach ($this->values as $name => $value) {
             if (is_numeric($name)) {
-                $change[] = "$value = NULL"; //"$value = DEFAULT";
+                $change[] = "`$value` = NULL"; //"$value = DEFAULT";
             } else if (is_null($value)) {
-                $change[] = $name . ' = NULL';
+                $change[] =  "`$name` = NULL";
             } else {
-                $change[] = $name . " = :value_$name";
+                $change[] = "`$name` = :value_$name";
             }
         }
         return implode(', ', $change);
