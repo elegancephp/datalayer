@@ -95,7 +95,8 @@ class Select extends BaseQuery
     /** Adiciona um WHERE para ser utilizado na query verificando se um campo é nulo */
     function whereNull(string $campo, bool $status = true): self
     {
-        $this->where($status ? "`$campo` is null" : "`$campo` is not null");
+        $campo = substr_count($campo, '(') ? $campo : "`$campo`";
+        $this->where($status ? "$campo is null" : "$campo is not null");
         return $this;
     }
 
@@ -104,7 +105,8 @@ class Select extends BaseQuery
         $fields = [];
         foreach ($this->fields as $name => $alias) {
             if (!is_numeric($name)) {
-                $fields[] = $alias ? "`$name` as $alias" : "`$name`";
+                $name = substr_count($name, '(') ? $name : "`$name`";
+                $fields[] = $alias ? "$name as $alias" : $name;
             }
         }
         return empty($fields) ? '*' : implode(', ', $fields);
